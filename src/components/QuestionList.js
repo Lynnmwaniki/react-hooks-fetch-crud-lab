@@ -16,7 +16,7 @@ const onDelete=(id)=>{
     method: 'DELETE',
     
   }).then(data=>data.json()).then(()=>
-   { const updated=questions.filter(q=>q.id!=id)
+   { const updated=questions.filter(q=>q.id!==id)
   
   setQuestions(updated)
   }
